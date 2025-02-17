@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeee6;
+    color: white;
+}
+
+header, footer {
+    background-color: #ffcad4;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe5d8;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f4db50;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+main {
+    width: 60%;
+    padding: 20px;
+    background-color: #ffdbe2;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+aside {
+    width: 30%;
+    background-color: #c9bbcb;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    
+    
+}
+
+aside:hover {
+    background-color: #9f8189;
+}
+
+form label, form select, form input, form button {
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="text"] {
+    width: 150px;
+    transition: width 0.3s ease;
+}
+
+button {
+    background-color: #d9bab8;
+    color: #333;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6f5b52;
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+}
