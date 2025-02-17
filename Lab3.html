@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rock-Paper-Scissors</h1>
+        <h3>Zimin Lin _ INST377 _ Lab 3</h3>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+                <li><a href="https://eyes.nasa.gov/apps/asteroids/#/home">NASA Asteroids</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="choice">Choose:</label>
+                <select id="choice" name="choice">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+                <button type="submit">Play</button>
+            </form>
+        </main>
+        <aside>
+            <h3>Rules</h3>
+            <h4>You must choose Rock, Paper or Scissor.</h4>
+            <h3>The Combos are as follows: </h3>
+            <p>Rock beats Scissors</p>
+            <p>Scissors beats Paper</p>
+            <p>Paper beats Rock</p>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>Confusion is part of programming. ― Felienne Hermans</p>
+        <p>&copy; 2025 Rock-Paper-Scissors Game</p>
+    </footer>
+
+    <script>
+        document.getElementById("name").addEventListener("focus", function() {
+            this.style.width = "250px";
+        });
+        document.getElementById("name").addEventListener("blur", function() {
+            this.style.width = "150px";
+        });
+    </script>
+</body>
+</html>
